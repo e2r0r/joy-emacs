@@ -1,6 +1,6 @@
 #title README
 
-***breeze.guangfeng@gmail.com***
+***breeze.guangfeng@googlemail.com***
 
 * my .emacs and site-lisp backup here
  - add .emacs for console
