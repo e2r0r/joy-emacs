@@ -3,3 +3,5 @@
 ***breeze.guangfeng@gmail.com***
 
 * my .emacs and site-lisp backup here
+ - add .emacs for console
+
