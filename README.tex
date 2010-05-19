@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+
+\begin{document}
+
+\title{README}
+\author{G}
+\date{五月 19, 2010}
+
+\maketitle
+
+
+
+\textbf{\emph{breeze.guangfeng\@googlemail.com}}
+
+\section{my .emacs and site-lisp backup here}
+
+\begin{itemize}
+\item add .emacs for console
+\item fix .emacs with classic theme supporting
+\item add SML-Mode
+\end{itemize}
+
+
+
+\end{document}
