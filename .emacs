@@ -39,13 +39,13 @@
 (add-to-list 'load-path
 	     "~/site-lisp/color-theme")
 (require 'color-theme)
-(load-file "~/site-lisp/color-theme-twilight.el")
+;;(load-file "~/site-lisp/color-theme-twilight.el")
 
 (load-file "~/site-lisp/transform-window.el")
 
 ;;(load "django-mode.el")
 
-(color-theme-twilight)
+;;(color-theme-twilight)
 ;; 将mmm-mode的背景色设深一些，与当前的背景色匹配
 ;;(set-face-background 'mmm-default-submode-face "DarkBlue")
 

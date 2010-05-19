@@ -1,7 +1,7 @@
 ;; Base language setting, Copy from http://forum.ubuntu.org.cn/viewtopic.php?t=40005
 (set-language-environment 'UTF-8)
 ;; 設置默認字體，我現在喜歡大一點的字體，養眼。
-(set-default-font "Courier 10 Pitch-10")
+(set-default-font "Courier 10 Pitch-11")
 ;;(set-default-font "Monaco -8")
 ;; 设置中文字体
 (set-fontset-font "fontset-default"
@@ -14,13 +14,14 @@
 (add-to-list 'load-path
 	     "~/site-lisp/color-theme")
 (require 'color-theme)
-(load-file "~/site-lisp/color-theme-twilight.el")
+;;(load-file "~/site-lisp/color-theme-twilight.el")
 
 (load-file "~/site-lisp/transform-window.el")
 
 ;;(load "django-mode.el")
+(color-theme-initialize)
+(color-theme-classic)
 
-(color-theme-twilight)
 ;; 将mmm-mode的背景色设深一些，与当前的背景色匹配
 ;;(set-face-background 'mmm-default-submode-face "DarkBlue")
 
@@ -78,7 +79,7 @@
 (menu-bar-mode nil)
 (tool-bar-mode nil)
 (setq x-select-enable-clipboard t)
-(setq frame-title-format "gFn@%b") ; 显示当前编辑的文档
+(setq frame-title-format "Guang Feng@%b") ; 显示当前编辑的文档
 
 
 (add-to-list 'load-path
@@ -220,6 +221,12 @@
 (setq w3m-command-arguments '("-cookie" "-F"))
 (setq w3m-use-cookies t)
 (setq w3m-home-page "http://wiki.rdev.kingsoft.net/moin/") 
+
+;; ML
+(add-to-list 'load-path "~/site-lisp/sml-mode")
+     (autoload 'sml-mode "sml-mode" "Major mode for editing SML." t)
+     (autoload 'run-sml "sml-proc" "Run an inferior SML process." t)
+     (add-to-list 'auto-mode-alist '("\\.\\(sml\\|sig\\)\\'" . sml-mode))
 
 ;;htmlize
 (require 'htmlize)
